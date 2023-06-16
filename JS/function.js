@@ -10,7 +10,7 @@ card.forEach(carta => {
         
         switch(validador){
             case 'pro1':
-                window.location ='https://proweb-animation.github.io/Stio-Web/index.html';
+                window.location ='https://html5cpp.github.io/calculadora.github.io/';
             break;
             case 'pro2':
                 window.location ='https://proweb-animation.github.io/Stio-Web/index.html';
