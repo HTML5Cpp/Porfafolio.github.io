@@ -13,7 +13,10 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
-
+    h1::selection, h2::selection, h3::selection, span::selection, p::selection, a::selection{
+        background-color: #ff9c07;
+        color: #353535;
+    }
 /* ---------------------------------------- */
 /* CARDS */
 main{
@@ -134,3 +137,90 @@ main{
                     }
         
 /* CARDS */
+
+
+@media only screen and (max-width: 600px) {
+/* CARDS */
+main{
+    width: 100%;
+    height: auto;
+    padding: 1rem 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+    .card{
+        width: 100%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+        .card-top{
+            width: 100%;
+            height: 150px;
+        }
+        
+        .card-top div{
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            
+            backdrop-filter: blur(3px);
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .card-top h3{
+                color: #161616;
+                text-transform: uppercase;
+                font-size: 1.7rem;
+                text-align: center;
+                font-family: 'Gambarino', serif;
+                
+            }
+            
+        .card-footer{
+            width: 100%;
+            height: auto;
+            border-radius: 0px 0px 15px 15px; 
+            padding: 1rem;
+        }
+            .card-footer div{
+                width: 100%;
+                height: auto;
+                margin-bottom: 0.5rem;
+            }
+                .t-f-card{
+                    font-size: 1.2rem;
+                    color: #161616;
+                    font-family: 'Gambarino', serif
+                }
+                .general{
+                    width: fit-content;
+                    height: auto;
+                    padding: 0.3rem;
+                    border-radius: 5px;
+                    border-width: 0;
+
+                    font-size: 1rem;
+
+                    display: inline-block;
+                }
+                    .cate{
+                        background-color: #ff9c07;
+                    }
+
+                    .leng{
+                        background-color: #38b612;
+                    }
+                    .des{
+                        background-color: #9b12b6;
+                        font-size: 0.9rem;
+                    }
+        
+/* CARDS */
+}
