@@ -1,3 +1,4 @@
+
 nav{
     width: 100%;
     height: 9vh;
@@ -62,13 +63,59 @@ ul.topnav {
 
 
 @media only screen and (max-width: 600px) {
+  #menumobil_open, #menumobil_close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
 
+    font-size: 2.8rem;
+    transition: all 1s;
+  }
+    #menumobil_open{
+      color: #f7b655;
+    }
+    #menumobil_close{
+      color: #f75555;
+    }
+      .animacion {
+        animation: desaparecer 0.5s ease-out;
+      }
+      @keyframes desaparecer {
+        0% {
+            opacity: 0; /* Posición inicial del objeto */
+            right: -20px;
+            transform: rotate(-50deg);
+        }
+        25% {
+          right: 10px;
+          transform: rotate(-0deg);
+          opacity: 100%; /* Posición final del objeto después de la animación */
+        }
+        50% {
+          right: 17px;
+          transform: rotate(30deg);
+          opacity: 100%; /* Posición final del objeto después de la animación */
+        }
+        75% {
+          right: 10px;
+          transform: rotate(-10deg);
+          opacity: 100%; /* Posición final del objeto después de la animación */
+        }
+        100% {
+          right: 10px;
+          transform: rotate(0deg);
+          opacity: 100%; /* Posición final del objeto después de la animación */
+        }
+      }
+  
   nav{
     width: 100%;
-    height: auto;
+    height: 70px;
     padding: 0rem;
+    overflow: hidden;
   
     position: relative;
+    transition: all 0.4s;
   }
     ul.topnav {
       list-style-type: none;
